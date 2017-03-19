@@ -11,7 +11,7 @@ It is well behaved on both mobile & desktop and radically minimal in its footpri
 
 ### In the wild
 
-I'm so damned fond of this theme that I use it on [my own blog](http://travelog.io/).
+Demo [here](http://travelog.io/galileo-theme/). I'm so damned fond of this theme that I also use it on [my own blog](http://travelog.io/).
 
 ### Installation
 
@@ -30,7 +30,7 @@ Make changes in [_config.yml](https://github.com/rowanoulton/galileo-theme/blob/
 
 I've employed [Typekit](https://typekit.com/) to load both "[Adobe Caslon Pro](https://typekit.com/fonts/adobe-caslon-pro)" & "[LTC Bodoni 175](https://typekit.com/fonts/ltc-bodoni-175)". To make use of these with your own Typekit account, publish a kit and enter the ID into the Jekyll config.
 
-This _is_ optional. If you don't want to use Typekit, well _FINE_, just leave the Typekit Kit ID blank. You'll need to elect and specify substitute fonts [here](https://github.com/rowanoulton/galileo-theme/blob/master/css/screen.scss#L7) and [here](https://github.com/rowanoulton/galileo-theme/blob/master/css/screen.scss#L8).
+This _is_ optional. If you don't want to use Typekit, well _fine_, just leave the Typekit Kit ID blank. You'll need to elect and specify substitute fonts [here](https://github.com/rowanoulton/galileo-theme/blob/master/css/screen.scss#L7) and [here](https://github.com/rowanoulton/galileo-theme/blob/master/css/screen.scss#L8).
 
 ### Deployment
 

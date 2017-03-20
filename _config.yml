@@ -6,14 +6,18 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: All Over Earth
+title:
+  en: All Over Earth
+  th: ThaiTranslationHere
 author: Brandon & Gam
 author_link: https://allover.earth
-author_description: Just another couple with a travel blog
+author_description:
+  en: Just another couple with a travel blog
+  th: ThaiTranslationHere
 email: hi@allover.earth
-description: > # this means to ignore newlines until "baseurl:"
-  Brandon and Gam are travelling around the Earth.
-  We're documenting what we find, so stay tuned.
+description:
+  en: Brandon and Gam are travelling around the Earth. We're documenting what we find, so stay tuned.
+  th: ThaiTranslationHere
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://allover.earth" # the base hostname & protocol for your site
 
@@ -27,13 +31,19 @@ picturefill: false
 typekit_kit_id:
 
 # Build settings
-gems: [jekyll-paginate]
+gems:
+  - jekyll-paginate
+  - jekyll-polyglot
 markdown: kramdown
 permalink: pretty
 
 # Pagination
-paginate: 5
-
+paginate: 1
 # Sass
 sass:
     style: :compressed
+    
+languages: ["en", "th"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css"]
+parallel_localization: true

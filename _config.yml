@@ -8,16 +8,16 @@
 # Site settings
 title:
   en: All Over Earth
-  th: ThaiTranslationHere
+  th: All Over Earth
 author: Brandon & Gam
 author_link: https://allover.earth
 author_description:
   en: Just another couple with a travel blog
-  th: ThaiTranslationHere
+  th: Just another couple with a travel blog
 email: hi@allover.earth
 description:
   en: Brandon and Gam are travelling around the Earth. We're documenting what we find, so stay tuned.
-  th: ThaiTranslationHere
+  th: แบรนดอน แอนด์ แก้ม (เมกันผิวขาวและคนไทยผิวแทน) ผู้ที่จะเดินทางรอบโลก และพวกเราจะบันทึกทุกสิ่งที่พวกเราเจอไว้ที่นี่ โปรดติดตาม!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://allover.earth" # the base hostname & protocol for your site
 

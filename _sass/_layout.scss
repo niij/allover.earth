@@ -1,12 +1,20 @@
 #banner {
     @include retina-background-image($img-banner);
+    /*
+        Removing background color, because
+        using a non-rectangular banner (eg triangle) with transparency shows an ugly
+        gray background
     background-color: #8e8387;
+    (see ... --> ::after --> background) 
+    */
+    background-repeat: no-repeat;
     outline: none;
     display: block;
     width: $banner-width;
     height: $banner-height;
     margin: 0 auto 35px;
     position: relative; /* To ensure the bottom border is positioned correctly */
+
 
     h1 {
         // Font is included from Google Fonts automatically unless a custom banner is used
@@ -28,7 +36,11 @@
         top: $banner-height;
         left: $banner-border-offset;
         content: "";
-        background: #443E40;
+        /*
+          This adds a shadow effect to the rectangular banner.
+          It is commented, because I am using a non-rectangular banner
+          (see #banner --> background-color)  
+        background: #443E40;*/
         height: $banner-border-width;
         width: $banner-width - ($banner-border-offset* 2);
     }

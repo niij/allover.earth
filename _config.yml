@@ -38,7 +38,7 @@ markdown: kramdown
 permalink: pretty
 
 # Pagination
-paginate: 1
+paginate: 4
 # Sass
 sass:
     style: :compressed

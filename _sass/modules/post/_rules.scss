@@ -21,14 +21,16 @@
             margin-top: 5px;
         }
     }
-
+    
+    @include font-face("Georgia", fonts/georgia, null, null, woff);
     .post-title {
         font-family: $title-font-family;
         display: block;
-        font-weight: 700;
+        font-weight: normal;
         font-size: $post-title-min-font-size;
         text-align: center;
         line-height: 1.4;
+        text-transform: uppercase;
 
         // Force default text colour [as post-header is wrapped by a link]
         color: $text-color;

@@ -54,6 +54,31 @@
     }
 }
 
+@include font-face("Franklin Gothic Black", fonts/fgb, null, null, woff);
+#lang-selector {
+    display: block;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    text-align: center;
+    margin: 0px 0 25px;
+    font-size: 24px;
+    font-family: $language-selector-font-family;
+    font-variant: small-caps;
+    line-height: 0.5px;
+    letter-spacing: 3px;
+
+    // Fix typekit line-height with excess top padding
+    padding: 20px 0 20px;
+    
+    .active-lang {
+      font-weight: bold;
+    }
+    
+    a {
+      color: #5B5B5B;
+    }
+}
+
 #footer {
     margin-top: 50px;
     text-align: center;

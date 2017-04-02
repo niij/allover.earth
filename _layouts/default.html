@@ -4,6 +4,7 @@
     <body class="is-offset {% unless site.typekit_kit_id %}wf-inactive{% endunless %}">
         {% include header.html %}
         <section role="main">
+            {% include lang.html %}
             {{ content }}
         </section>
         {% include footer.html %}

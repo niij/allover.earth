@@ -48,6 +48,7 @@
         display: block;
         text-align: center;
         margin: 0px;
+        font-family: $caption-font-family;
         font-variant: small-caps;
         letter-spacing: 0.06em;
         padding: 0px;
@@ -159,19 +160,6 @@
             width: 185px;
             margin: 23px auto 30px;
             border-bottom: 3px double $border-color;
-        }
-    }
-
-    @include typekit-fallback {
-        .post-image-caption {
-            // Our fallback font is much larger, so we need to reduce the font-size and increase the line-height
-            font-size: 15px;
-            line-height: 1.8 !important;
-
-            &::after {
-                // Reset a reasonable top margin in absence of the abnormally tall typekit font line-height
-                margin-top: 25px;
-            }
         }
     }
 

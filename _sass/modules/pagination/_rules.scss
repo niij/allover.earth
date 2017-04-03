@@ -5,6 +5,7 @@
         margin: -10px auto 0;
         display: block;
         border-top: 1px solid $pagination-border-color;
+        border-bottom: 1px solid $pagination-border-color;
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -45,7 +46,7 @@
     .pagination-ellipsis {
         padding: 18px 8px 12px;
         min-width: 35px;
-        border-bottom: 1px solid $pagination-border-color;
+        border-bottom: 1px solid rgba(0,0,0,0);
         color: $legal-color;
         letter-spacing: 0.02em;
         clear: both;

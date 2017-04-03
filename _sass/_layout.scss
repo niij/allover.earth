@@ -84,10 +84,11 @@
     text-align: center;
 
     &::after {
-        @include retina-background-image($img-dude);
+        @include retina-background-image($img-footer);
         display: block;
         content: "";
-        width: 65px;
+        background-repeat: no-repeat;
+        width: 164px; /* if you change the footer image, you have to manually adjust the resolution.  Elegant, I know... */
         height: 158px;
         margin: 20px auto 50px;
     }

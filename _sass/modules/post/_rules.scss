@@ -49,7 +49,7 @@
         text-align: center;
         margin: 0px;
         font-family: $caption-font-family;
-        font-variant: small-caps;
+        font-variant: normal;
         letter-spacing: 0.06em;
         padding: 0px;
     }
@@ -78,9 +78,8 @@
         // text displays nicely if wrapped across multiple lines. To solve this,
         // we increase the line-height while offsetting its position upwards slightly.
         // This will keep the alignment between Bodoni & Caslon AND wrap nicely.
-        line-height: 1.4;
+        line-height: 1.5;
         position: relative;
-        top: -2px;
     }
 
     .post-body-location-divider {

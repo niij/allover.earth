@@ -8,8 +8,6 @@ location: Culebra, Puerto Rico
 permalink: /culebra
 ---
 
-17-20 February 2017
-
 สัปดาห์นี้เราไปเที่ยวเกาะกัน เกาะใหญ่ๆ ที่คนเขาไปเที่ยวใน Puerto Rico มีอยู่สองเกาะด้วยกัน นั่นคือ Culebra กับ Viques โดยการเดินทางไปนั้น เราไปด้วย Uber จาก San Juan ไปถึง Fajardo ประมาณ $60 แล้วก็ต่อ Ferry ไปที่เกาะ ราคา Ferry ไม่แพงอย่างที่คิด ประมาณ $2 ถ้าไป Viques แต่ถ้าไป Culebra ก็ $2.50 แพงกว่านิดนึง เพราะส่วนใหญ่คนไป Culebra กันเยอะ
 
 <div class="post-image">

@@ -30,6 +30,8 @@ cd ..
 # Clean out existing contents
 rm -rf _site/**/* || exit 0
 
+ls _site
+
 # Run our compile script
 doCompile
 

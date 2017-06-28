@@ -25,12 +25,14 @@ SHA=`git rev-parse --verify HEAD`
 git clone $REPO _site
 cd _site
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
+git ls-files | xargs rm -rf
+
 cd ..
 
 # Clean out existing contents
 rm -rf _site/**/* || exit 0
 
-ls _site
+
 
 # Run our compile script
 doCompile

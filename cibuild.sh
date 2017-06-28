@@ -25,17 +25,11 @@ SHA=`git rev-parse --verify HEAD`
 git clone $REPO _site
 cd _site
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
-git ls-files | xargs rm -rf
-
 cd ..
 
 # Clean out existing contents
-ls -la
-rm -rf _site/**/* || exit 0
-
-ls -la
+rm -rf _site/**/*
 find ./_site -path ./_site/.git -prune -o -exec rm -rf {} \;
-ls -la
 
 # Run our compile script
 doCompile
@@ -48,7 +42,9 @@ git config user.email "travis.build@allover.earth"
 # If there are no changes to the compiled _site (e.g. this is a README update) then just bail.
 if git diff --quiet; then
     echo "No changes to the output on this push; exiting."
-    exit 0
+else
+  echo "changes"
+  git diff
 fi
 
 # Commit the "changes", i.e. the new version.

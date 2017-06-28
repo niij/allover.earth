@@ -57,15 +57,13 @@ At Playa Negra, we took a couple hours to swim and play in the black volcanic sa
 </div>
 
 
-The next beach that we went to was Playa Caracas.  Our friend Maria is from Caracas, Venezuela so we had to go to get a picture with the sign.
-
-I still haven't found a Springfield Beach anywhere, but I'll keep looking.
+The next beach that we went to was Playa Caracas.  Our friend Maria is from Caracas, Venezuela so we had to go to get a picture with the sign.  I still haven't found a Springfield Beach anywhere, but I'll keep looking.
 
 <div class="post-image post-image--split">
     <img src="img/vieques/11-ver@small.jpg" alt="" />
     <img src="img/vieques/12-ver@small.jpg" alt="" />
 </div>
 
-Unfortunately we didn't get to see the Bioluminescence Bay because we went there during a full moon and we couldn't see the Bioluminescence because it's too faint compared to the moonlight.  Maybe next time :)
+We had a campfire on our last night and you know what? Off Spray is a propellant and works very well as a fire starter!
 
-We had a campfire on our last night and you know what? Off Spray can help you set a fire! We also learned to hitch hike and it's not scary. The people who picked us up were very nice and had some interesting stories for us.  We might try it again in the future who knows...
+We also learned to hitch hike and it's not too scary. The people who picked us up were very nice and had some interesting stories for us.  We might try it again in the future who knows...

@@ -51,3 +51,6 @@ languages_friendly: ["eng", "thai"]
 default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css"]
 parallel_localization: true
+
+# for travis compatibility.  see: https://jekyllrb.com/docs/continuous-integration/travis-ci/
+exclude: [vendor]

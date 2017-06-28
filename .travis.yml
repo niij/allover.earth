@@ -1,9 +1,9 @@
-language: generic # don't install any environment
+language: ruby # don't install any environment
 
-script: bash ./deploy.sh
+script: ./cibuild.sh
 env:
   global:
   - ENCRYPTION_LABEL: "afff9a76cc1e"
   - COMMIT_AUTHOR_EMAIL: "travis.build@allover.earth"
 rvm:
-  - 2.2
+  - 2.3.3

@@ -28,9 +28,11 @@ git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 cd ..
 
 # Clean out existing contents
+ls
 rm -rf _site/**/*
+ls
 find ./_site -path ./_site/.git -prune -o -exec rm -rf {} \;
-
+ls 
 # Run our compile script
 doCompile
 

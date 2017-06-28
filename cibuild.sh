@@ -27,13 +27,13 @@ cd _site
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 cd ..
 
-echo "cat ./vieques.html"
-cat ./vieques.html
+echo "cat _site/vieques.html    9999"
+cat _site/vieques.html
 
 # Clean out existing contents
 rm -rf _site/**/* || exit 0
 
-echo "ls -la _site"
+echo "ls -la _site  ll"
 ls -la _site
 
 # Run our compile script
@@ -41,10 +41,10 @@ doCompile
 
 # Now let's go have some fun with the cloned repo
 cd _site
-echo "ls -la _site"
+echo "ls -la _site   45"
 ls -la
-echo "cat ./vieques.html"
-cat ./vieques.html
+echo "cat ./vieques.html  443"
+cat _site/vieques.html
 
 git config user.name "Travis CI allover.earth"
 git config user.email "travis.build@allover.earth"

@@ -25,7 +25,7 @@ SHA=`git rev-parse --verify HEAD`
 git clone $REPO _site
 cd _site
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
-find . -path ./.git -prune -o -exec rm -rf {} \;
+find . -path ./.git -prune -o -exec rm -rf {} \; 2> /dev/null
 cd ..
 
 # Run our compile script

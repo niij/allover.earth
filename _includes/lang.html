@@ -1,10 +1,11 @@
 <div id="lang-selector">
   |
   {% for lang in site.languages %}
+  {% assign lang_friendly = site.languages_friendly[forloop.index0] %}
   {% if lang == site.default_lang %}
-  <a href=" {{site.url}}{{page.url}}" {% if lang == site.active_lang %}class="active-lang"{% endif %}>{{ lang }}</a>
+  <a href=" {{site.url}}{{page.url}}" {% if lang == site.active_lang %}class="active-lang"{% endif %}>{{ lang_friendly }}</a>
   {% else %}
-  <a href=" {{site.url}}/{{lang}}{{page.url}}" {% if lang == site.active_lang %}class="active-lang"{% endif %}>{{ lang }}</a>
+  <a href=" {{site.url}}/{{lang}}{{page.url}}" {% if lang == site.active_lang %}class="active-lang"{% endif %}>{{ lang_friendly }}</a>
   {% endif %}
   |
   {% endfor %}

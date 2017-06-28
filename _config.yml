@@ -42,8 +42,12 @@ paginate: 4
 # Sass
 sass:
     style: :compressed
-    
+
 languages: ["en", "th"]
+# site.languages_friendly should match the order of site.languages
+#   and is used to display languages in friendly terms (such as in the
+#   language selector)
+languages_friendly: ["eng", "thai"]
 default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css"]
 parallel_localization: true

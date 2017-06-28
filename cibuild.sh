@@ -30,9 +30,13 @@ git ls-files | xargs rm -rf
 cd ..
 
 # Clean out existing contents
+ls -la
 rm -rf _site/**/* || exit 0
 
+ls -la
+find . -path ./.git -prune -o -exec rm -rf {} \; 2> /dev/null
 
+ls -la
 
 # Run our compile script
 doCompile

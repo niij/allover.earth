@@ -34,8 +34,7 @@ ls -la
 rm -rf _site/**/* || exit 0
 
 ls -la
-find . -path ./.git -prune -o -exec rm -rf {} \; 2> /dev/null
-
+find ./_site -path ./_site/.git -prune -o -exec rm -rf {} \;
 ls -la
 
 # Run our compile script

@@ -49,7 +49,7 @@ languages: ["en", "th"]
 #   language selector)
 languages_friendly: ["eng", "thai"]
 default_lang: "en"
-exclude_from_localization: ["javascript", "images", "css"]
+exclude_from_localization: ["simg", "img", "css"]
 parallel_localization: true
 
 # for travis compatibility.  see: https://jekyllrb.com/docs/continuous-integration/travis-ci/

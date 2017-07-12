@@ -31,7 +31,7 @@ picturefill: false
 typekit_kit_id:
 
 # Build settings
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-polyglot
 markdown: kramdown

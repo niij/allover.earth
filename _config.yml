@@ -49,8 +49,8 @@ languages: ["en", "th"]
 #   language selector)
 languages_friendly: ["eng", "thai"]
 default_lang: "en"
-exclude_from_localization: ["simg", "img", "css"]
+exclude_from_localization: ["img", "css"]
 parallel_localization: true
 
-# for travis compatibility.  see: https://jekyllrb.com/docs/continuous-integration/travis-ci/
-exclude: [vendor]
+exclude: [vendor, node_modules, img]
+keep_files: ['img']

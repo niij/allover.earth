@@ -25,18 +25,34 @@ SHA=`git rev-parse --verify HEAD`
 # Create a new empty branch if gh-pages doesn't exist yet (should only happen on first deploy)
 git clone $REPO $BUILD_DIR
 cd $BUILD_DIR
-git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
+git checkout $TARGET_BRANCH || exit 20
 cd ..
+
+##########
+echo "la _site before rm-rf"
+ls -la _site
 
 # Clean out existing contents
 rm -rf $BUILD_DIR/**/* || exit 0
 
+#######################3
+echo "la _site after rm -rf"
+ls -la _site
 
 # Run our compile script
 doCompile
 
+############
+echo "la _site after doCompile"
+ls -la _site
+
 # Now let's go have some fun with the cloned repo
 cd $BUILD_DIR
+
+##############
+echo "git status inside _site"
+git status
+
 git config user.name "Travis CI allover.earth"
 git config user.email "travis.build@allover.earth"
 
@@ -45,7 +61,8 @@ if git diff --quiet; then
     echo "No changes to the output on this push"
 fi
 
-#debug travis..
+###################
+echo "la img/"
 ls -la img/
 
 # Commit the "changes", i.e. the new version.

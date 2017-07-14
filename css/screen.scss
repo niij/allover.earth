@@ -38,10 +38,10 @@ $banner-border-offset: 2px;
 
 // Images
 // Note that extensions are omitted for use in retina-background-image mixin
-$img-separator: '{{ site.baseurl }}/img/_static/separator';
-$img-banner: '{{ site.baseurl }}/img/_static/banner';
-$img-footer: '{{ site.baseurl }}/img/_static/footer';
-$img-location: '{{ site.baseurl }}/img/_static/icon-location';
+$img-separator: '{{ site.baseurl }}/img/static/separator';
+$img-banner: '{{ site.baseurl }}/img/static/banner';
+$img-footer: '{{ site.baseurl }}/img/static/footer';
+$img-location: '{{ site.baseurl }}/img/static/icon-location';
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

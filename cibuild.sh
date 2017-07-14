@@ -22,12 +22,11 @@ SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 
 rm -rf $BUILD_DIR
-mkdir $BUILD_DIR
-cp -R .git $BUILD_DIR
+git clone $REPO $BUILD_DIR
 cd $BUILD_DIR
 git checkout $TARGET_BRANCH || exit 20
+git rm -rf .
 cd ..
-
 
 #######################
 echo "la _site after rm -rf"

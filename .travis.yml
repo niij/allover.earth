@@ -1,4 +1,7 @@
 language: ruby # don't install any environment
+node_js:
+  - "4"
+
 sudo: false
 
 script: ./cibuild.sh

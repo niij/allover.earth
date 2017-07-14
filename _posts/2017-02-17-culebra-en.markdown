@@ -8,7 +8,7 @@ location: Culebra, Puerto Rico
 permalink: /culebra
 ---
 
-Puerto Rico has 2 nearby islands, Culebra and Vieques.  They're both beautiful and they both have great campgrounds, beaches, snorkeling, and friendly people. We went on a camping trip to Culebra on a warm February weekend.
+Puerto Rico has two nearby islands, Culebra and Vieques.  They're both beautiful and they both have great campgrounds, beaches, snorkeling, and friendly people. We went on a camping trip to Culebra on a warm February weekend.
 
 We took an Uber from San Juan to the Fajardo Ferry terminal on a Friday afternoon.  We had originally planned to go to Vieques, but the Ferry to Culebra was about to leave and had some open seats, so we changed our plans (we saw Vieques another time, but that's for another post).
 

@@ -53,4 +53,4 @@ exclude_from_localization: ["img", "css"]
 parallel_localization: true
 
 exclude: [vendor, node_modules, img]
-keep_files: ['img']
+keep_files: ['img', '.git']

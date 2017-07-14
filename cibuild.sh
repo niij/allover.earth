@@ -63,3 +63,6 @@ ssh-add ../travis_deploy
 
 # Now that we're all set up, we can push.
 git push $SSH_REPO $TARGET_BRANCH
+
+#see which process is causing travis to hang
+ps aux

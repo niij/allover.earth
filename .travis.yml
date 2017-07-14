@@ -1,6 +1,8 @@
 language: ruby # don't install any environment
+sudo: false
 
 script: ./cibuild.sh
+
 env:
   global:
   - ENCRYPTION_LABEL: "afff9a76cc1e"

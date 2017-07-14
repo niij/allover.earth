@@ -31,6 +31,7 @@ cd ..
 # Clean out existing contents
 rm -rf $BUILD_DIR/**/* || exit 0
 
+
 # Run our compile script
 doCompile
 
@@ -41,16 +42,15 @@ git config user.email "travis.build@allover.earth"
 
 # If there are no changes to the compiled $BUILD_DIR (e.g. this is a README update) then just bail.
 if git diff --quiet; then
-    echo "No changes to the output on this push; exiting."
-else
-  echo "changes"
-  git diff
+    echo "No changes to the output on this push"
 fi
+
+#debug travis..
+ls -la img/
 
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
-git add -A .
-git commit -m "Deploy to GitHub Pages: ${SHA}"
+git commit -am "Deploy to GitHub Pages: ${SHA}"
 
 # Get the deploy key by using Travis's stored variables to decrypt travis_deploy.enc
 ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"

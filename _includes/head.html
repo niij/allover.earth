@@ -27,5 +27,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Sanchez" type="text/css">
   <link rel="stylesheet" href="{{ "/css/screen.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  {% I18n_Headers https://allover.earth %}
+  <link rel="alternate" href="{{site.url}}{{page.url}}" hreflang="en" />
+  <link rel="alternate" href="{{site.url}}/th{{page.url}}" hreflang="th" />
+  <link rel="alternate" href="{{site.url}}{{page.url}}" hreflang="x-default" />
 </head>

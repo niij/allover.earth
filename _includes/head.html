@@ -26,8 +26,16 @@
   {% endif %}
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Sanchez" type="text/css">
   <link rel="stylesheet" href="{{ "/css/screen.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" href="{{site.url}}{{page.url}}" hreflang="en" />
-  <link rel="alternate" href="{{site.url}}/th{{page.url}}" hreflang="th" />
-  <link rel="alternate" href="{{site.url}}{{page.url}}" hreflang="x-default" />
+  <link rel="alternate"
+        hreflang="{{site.default_lang}}"
+        href="https://allover.earth{{page.permalink}}" />
+  {% for lang in site.languages %}
+  {% if lang == site.default_lang %}
+    {% continue %}
+  {% endif %}
+  <link rel="alternate"
+      hreflang="{{lang}}"
+      href="https://allover.earth/{{lang}}{{page.permalink}}" />
+  {% endfor %}
+  <link rel="alternate" href="https://allover.earth{{page.permalink}}" hreflang="x-default" />
 </head>

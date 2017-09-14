@@ -1,5 +1,7 @@
 language: ruby # don't install any environment
 
+before_script:
+  - npm install -g grunt-cli
 
 install:
   - . $HOME/.nvm/nvm.sh
